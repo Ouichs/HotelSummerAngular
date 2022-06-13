@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SrrCrudService } from 'src/app/class/servlet/srr-crud-service';
+import { UsersRestApiService } from '../shared/users-rest-api.service';
 
 
 
@@ -10,7 +10,7 @@ import { SrrCrudService } from 'src/app/class/servlet/srr-crud-service';
 })
 export class NewuserComponent implements OnInit {
 
-  constructor(private srv: SrrCrudService) { }
+  constructor(private srv: UsersRestApiService) { }
   user = { name: 0, firstName: '', email: "", password: "" }
 
   ngOnInit(): void {

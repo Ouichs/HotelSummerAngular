@@ -6,23 +6,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InscriptionComponent } from './inscription/inscription.component';
-import { NewuserComponent } from './service/user/newuser/newuser.component';
-import { FindallutilisateurComponent } from './service/user/findallutilisateur/findallutilisateur.component';
+
+import { UsersModule } from './users/users.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    InscriptionComponent,
-    NewuserComponent,
-    FindallutilisateurComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    UsersModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SrrCrudService } from '../class/servlet/srr-crud-service';
+import { UsersRestApiService } from '../shared/users-rest-api.service';
+
 
 @Component({
   selector: 'app-inscription',
@@ -10,7 +11,7 @@ export class InscriptionComponent implements OnInit {
 
 
   message!: string
-  constructor(private srv: SrrCrudService) { }
+  constructor(private srv: UsersRestApiService) { }
   user = { name: "", firstName: "", email: "", password: "" }
 
   ngOnInit(): void {
