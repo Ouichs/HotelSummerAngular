@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { NewuserComponent } from './service/user/newuser/newuser.component';
+import { FindallutilisateurComponent } from './service/user/findallutilisateur/findallutilisateur.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    NewuserComponent,
+    FindallutilisateurComponent
   ],
   imports: [
     BrowserModule,

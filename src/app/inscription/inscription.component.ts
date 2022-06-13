@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SrrCrudService } from '../class/servlet/srr-crud-service';
 
 @Component({
   selector: 'app-inscription',
@@ -8,20 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class InscriptionComponent implements OnInit {
 
 
-
-  button = { name: "", firstName: "", mail: "", password: 0 };
-  message: string | undefined
-  constructor() { }
+  message!: string
+  constructor(private srv: SrrCrudService) { }
+  user = { name: "", firstName: "", email: "", password: "" }
 
   ngOnInit(): void {
   }
-
   subscribe() {
-    this.message = this.button.name
-    this.message = this.button.firstName
-    this.message = this.button.mail
-
+    this.srv.create(this.user);
   }
-
 
 }

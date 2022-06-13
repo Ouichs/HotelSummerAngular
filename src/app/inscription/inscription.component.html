@@ -8,7 +8,7 @@
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Votre joli nom"
-        [(ngModel)]="button.name"
+        [(ngModel)]="user.name"
         [ngModelOptions]="{ standalone: true }"
       />
       <label for="exampleInputEmail1">Le prénom</label>
@@ -18,18 +18,18 @@
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Votre joli prénom"
-        [(ngModel)]="button.firstName"
+        [(ngModel)]="user.firstName"
         [ngModelOptions]="{ standalone: true }"
       />
 
       <label for="exampleInputEmail1">L'adrese mail</label>
       <input
-        type="email"
+        type="text"
         class="form-control"
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Entrez l'email"
-        [(ngModel)]="button.mail"
+        [(ngModel)]="user.email"
         [ngModelOptions]="{ standalone: true }"
       />
       <small id="emailHelp" class="form-text text-muted"
@@ -39,11 +39,11 @@
     <div class="form-group">
       <label for="exampleInputPassword1">Le mot de passe</label>
       <input
-        type="password"
+        type="text"
         class="form-control"
         id="exampleInputPassword1"
         placeholder="Entrez le mot de passe"
-        [(ngModel)]="button.password"
+        [(ngModel)]="user.password"
         [ngModelOptions]="{ standalone: true }"
       />
     </div>
