@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+$theme-colors:(
+
+"primary" : #FF9D56
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+.formulaire-inscription{
+
+margin: auto;
+padding-top: 2%;
+    width: 50vw;
+    max-width: 600px;
+}
+
+
+.btn-primary{
+    color: white;
+}
+
