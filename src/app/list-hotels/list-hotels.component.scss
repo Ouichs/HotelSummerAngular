@@ -1,0 +1,41 @@
+.listHotels{
+   width: 800px;
+   margin: 25px;
+   height: 80vh;
+}
+
+.card__hotel{
+   display: flex;
+   flex-direction: row;
+   margin-top: 50px;
+   border-radius: 8px;
+   background-color: #fff;
+   .card__images{
+      width: 50%;
+      background-color: grey;
+      border-radius: 8px 0 0 8px;
+   }
+   .card__information{
+      padding: 25px;
+   }
+   .card__nameHotel{
+      line-height: 0;
+      font-weight: 500;
+   }
+   .card__adress{
+      
+   }
+   .card__notePrice{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .price{
+         font-weight: 500;
+      }
+   }
+
+}
+
+
+
+
