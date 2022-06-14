@@ -1,4 +1,3 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { UsersRestApiService } from '../shared/users-rest-api.service';
 
@@ -12,16 +11,13 @@ export class InscriptionComponent implements OnInit {
 
 
   message!: string
-  constructor(private srv: UsersRestApiService, private http: HttpClient) { }
-  user = { name: "", firstname: "", email: "", password: "" }
+  constructor(private srv: UsersRestApiService) { }
+  user = { name: "", firstName: "", email: "", password: "" }
 
   ngOnInit(): void {
-
   }
   subscribe() {
-    this.srv.create(this.user)
-    this.message = this.user.firstname
+    this.srv.create(this.user);
   }
-
 
 }

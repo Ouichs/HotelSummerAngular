@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+ 
 }
 
 
@@ -17,17 +18,15 @@ $theme-colors:(
 
 
 .formulaire-inscription{
-    margin: auto;
-    padding-top: 2%;
+
+margin: auto;
+padding-top: 2%;
     width: 50vw;
     max-width: 600px;
 }
+
+
 .btn-primary{
     color: white;
-}
-
-.background{
-height: 100vh;
-
 }
 
