@@ -6,10 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CoreModule } from './core/core.module';
+import { PagesModule } from './pages/pages.module';
 
 import { UsersModule } from './users/users.module';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +21,8 @@ import { UsersModule } from './users/users.module';
     HttpClientModule,
     BrowserAnimationsModule,
     UsersModule,
-
-
+    CoreModule,
+    PagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
