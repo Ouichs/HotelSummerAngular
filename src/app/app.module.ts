@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
+import { HotelsModule } from './hotels/hotels.module';
 
 
 
@@ -24,6 +25,7 @@ import { PagesModule } from './pages/pages.module';
     BrowserAnimationsModule,
     CoreModule,
     PagesModule,
+    HotelsModule,
 
 
   ],
