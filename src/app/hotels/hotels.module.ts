@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { HotelsRoutingModule } from './hotels-routing.module';
-import { HotelListComponent } from './hotel-list/hotel-list.component';
 import { HotelFilterComponent } from './hotel-filter/hotel-filter.component';
 import { HotelFindComponent } from './hotel-find/hotel-find.component';
-import { PagesModule } from './pages/pages.module';
+import { HotelListComponent } from './hotel-list/hotel-list.component';
+
+
 
 
 
@@ -17,9 +17,12 @@ import { PagesModule } from './pages/pages.module';
   ],
   imports: [
     CommonModule,
-    HotelsRoutingModule,
-    PagesModule,
 
+  ],
+  exports:[
+    HotelListComponent,
+    HotelFilterComponent,
+    HotelFindComponent
   ]
 })
 export class HotelsModule { }
