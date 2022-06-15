@@ -1,0 +1,30 @@
+{
+    "name": "Campanile",
+    "description": "Le Campanile Lyon Centre Part-Dieu propose des chambres climatisées avec une   connexion Wi-Fi gratuite en face de la gare ferroviaire de Lyon-Part-Dieu.",
+    "pictures": null,
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Lyon",
+    "cp":"69003",
+    "street":"Rue Maurice Flandin",
+    "number":"31",
+    "contact_information":""
+}
+chambres:[
+{
+   "pictures":"ch1",
+   "price":"136",
+   "type_bedroom":"Chambre Double Supérieure"
+},
+{
+   "pictures":"ch2",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure Supérieure"
+},
+{
+   "pictures":"ch3",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}
