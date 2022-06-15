@@ -15,8 +15,12 @@
         <td>{{ c.name }}</td>
         <td>{{ c.firstname }}</td>
         <td>{{ c.email }}</td>
-        <td>{{c.password}</td>
+        <td>*********</td>
+        <td>
+          <button (click)="delete(c)" class="btn btn-dark">Delete</button>
+        </td>
       </tr>
+      <p>{{ message }}</p>
     </tbody>
   </table>
 </div>
