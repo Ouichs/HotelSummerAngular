@@ -1,0 +1,19 @@
+main{
+   width: 1200px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: red;
+}
+
+app-header, app-footer{
+   width: 100%;
+}
+
+app-root{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
