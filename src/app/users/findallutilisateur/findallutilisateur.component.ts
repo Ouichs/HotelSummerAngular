@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, EmbeddedViewRef, OnInit } from '@angular/core';
 import { User } from 'src/app/users/shared/user';
+import { UserRest } from '../shared/user-rest';
 import { UsersRestApiService } from '../shared/users-rest-api.service';
 
 
@@ -15,38 +16,42 @@ export class FindallutilisateurComponent implements OnInit {
   message: string;
 
   hello: string
+
+
   constructor(private srv: UsersRestApiService, private http: HttpClient) {
 
   }
 
   ngOnInit(): void {
-    this.srv.getInfo();
-    this.myList = JSON.parse(sessionStorage.getItem("lst"))._embedded.users
     this.init();
 
   }
 
   init() {
-    this.http.get<Array<User>>("http://localhost:8080/users/").subscribe(
+    this.http.get<UserRest>("http://localhost:8080/users").subscribe(
       response => {
-        this.myList = response
+        this.myList = response._embedded.users
         this.hello = JSON.stringify(response)
+        console.log(this.myList[0])
+        // console.log(this.myList)
       },
       err => {
-        console.log("KO");
+        console.log("KO  init");
       }
     )
   }
 
   delete(u: User) {
-    this.http.delete("http://localhost:8080/users/" + u.id).subscribe(
+
+    this.http.delete(u._links.self.href).subscribe(
       response => {
         this.message = "Article supprimé";
         this.init();
       },
       err => {
         this.message = "Erreur dans la suppression";
-        console.log("KO");
+        console.log("KO delete");
+        console.log(err)
       }
     )
 

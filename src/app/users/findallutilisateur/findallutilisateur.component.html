@@ -1,26 +1,26 @@
-<p>findallutilisateur works!</p>
-
-<div class="container col-5">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>nom</th>
-        <th>prenom</th>
-        <th>email</th>
-        <th>password</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let c of myList">
-        <td>{{ c.name }}</td>
-        <td>{{ c.firstname }}</td>
-        <td>{{ c.email }}</td>
-        <td>*********</td>
-        <td>
-          <button (click)="delete(c)" class="btn btn-dark">Delete</button>
-        </td>
-      </tr>
-      <p>{{ message }}</p>
-    </tbody>
-  </table>
+<div class="utilisateurs">
+  <div class="container col-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>nom</th>
+          <th>prenom</th>
+          <th>email</th>
+          <th>password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of myList">
+          <td>{{ c.name }}</td>
+          <td>{{ c.firstname }}</td>
+          <td>{{ c.email }}</td>
+          <td>*********</td>
+          <td>
+            <button (click)="delete(c)" class="btn btn-dark">Delete</button>
+          </td>
+        </tr>
+        <p>{{ message }}</p>
+      </tbody>
+    </table>
+  </div>
 </div>

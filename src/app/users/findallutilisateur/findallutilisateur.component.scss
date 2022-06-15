@@ -1,0 +1,15 @@
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.utilisateurs{
+    margin: auto;
+    width: 50vw;
+    max-width: 600px;
+    }
