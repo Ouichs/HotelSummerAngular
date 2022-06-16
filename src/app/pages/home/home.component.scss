@@ -1,0 +1,20 @@
+.container__home{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 70vh
+}
+
+.home__title{
+   margin-bottom: 25px;
+   p{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 112px;
+      color: #FF9D56;
+   }
+}
+

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
+import { HotelsModule } from './hotels/hotels.module';
 import { UsersModule } from './users/users.module';
 import { FacturationModule } from './facturation/facturation.module';
 
@@ -29,6 +30,8 @@ import { FacturationModule } from './facturation/facturation.module';
     UsersModule,
     CoreModule,
     PagesModule,
+    HotelsModule,
+    AppRoutingModule,
     FacturationModule,
 
   ],
