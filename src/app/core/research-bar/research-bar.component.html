@@ -1,16 +1,17 @@
 
 <div class="container">
-   <div>
+   <div class="bloc">
       <form onsubmit="event.preventDefault();" role="search">
-         <input id="search" type="search" placeholder="Votre ville" autofocus required />
+         <input id="search" type="search" placeholder="Votre ville" name="search" value="{{researchInfo()}}" [(ngModel)]="ville" autofocus required />
        </form>
    </div>
-   <div>
+
+   <div class="bloc">
       <app-datepicker></app-datepicker>
    </div>
    
-   <div class="select">
-      <select name="slct" id="slct">
+   <div class="select bloc">
+      <select name="slct" id="slct"  [(ngModel)]="NbPersonnes">
           <option>Nombre de personnes</option>
           <option value="1">1 personne</option>
           <option value="2">2 personnes</option>
@@ -19,7 +20,7 @@
       </select>
   </div>
 
-    <div>
-      <button class="btn__research" routerLink="/hotel/list">Rechercher</button>
+   <div class="bloc">
+      <button class="btn__research" routerLink="/hotel/list" (click)="researchInfo()">Rechercher</button>
     </div>
 </div>

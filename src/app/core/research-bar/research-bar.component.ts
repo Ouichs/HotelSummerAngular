@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchBarComponent implements OnInit {
 
+  ville: string;
+  startDate: string;
+  endDate:string;
+  NbPersonnes: string;
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+  researchInfo(){
+    sessionStorage.setItem("ville",this.ville);
+    sessionStorage.getItem("ville")
+  }
+
+  
+
+  
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Adress } from '../class/adress';
+import { BedRoomsRest } from '../class/bed-rooms-rest';
 import { HotelRest } from '../class/hotel-rest';
 import { HotelService } from '../services/hotel.service';
 
@@ -12,6 +13,8 @@ import { HotelService } from '../services/hotel.service';
 export class HotelFindComponent implements OnInit {
   hotel: HotelRest;
   adress: Adress;
+  bedrooms: BedRoomsRest;
+  listbedrooms:BedRoomsRest[] = [];
   id: number;
   constructor(private hotelService: HotelService, private activatedRoute: ActivatedRoute) { }
 
@@ -23,6 +26,7 @@ export class HotelFindComponent implements OnInit {
 
     this.getHotelbyId(this.id);
     this.getAdressbyId(this.id);
+    this.getBedroom(this.id);
   
   }
 
@@ -30,7 +34,20 @@ export class HotelFindComponent implements OnInit {
     this.hotelService.getHotelbyId(id).subscribe(
       data =>{
         this.hotel = data;
-          console.log(data)
+          //console.log(data)
+    })
+  }
+
+  getBedroom(id: number){
+    this.hotelService.getBedRooms(id).subscribe(
+      data =>{
+        this.bedrooms = data;
+        data['bedrooms']._embedded.bedroom.forEach(el => {
+          console.log(el)
+          this.listbedrooms.push(el)
+        });
+         console.log(data)
+         console.log(this.listbedrooms)
     })
   }
 
@@ -38,7 +55,7 @@ export class HotelFindComponent implements OnInit {
     this.hotelService.getHotelAdress(id).subscribe(
       data =>{
         this.adress = data;
-         console.log(data)
+         //console.log(data)
     })
   }
 }
