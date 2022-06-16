@@ -1,0 +1,84 @@
+.container{
+   background-color: #E7E7E7;
+   height: 100px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 32px;
+   border-radius: 8px;
+
+   #search{
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+      padding-left:10px;
+      width: 200px;
+   }
+
+   .btn__research{
+      width: 150px;
+      height: 55px;
+      background-color: #FF9D56;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+   }
+
+
+   select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      background: #fff;
+      background-image: none;
+  }
+  .select {
+      position: relative;
+      display: block;
+      width: 15em;
+      height: 55px;
+      line-height: 4;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 5px;
+      
+  }
+  select {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0 0 0 .5em;
+      cursor: pointer;
+      border: none;
+  }
+  select::-ms-expand {
+      display: none;
+  } 
+  .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 1em;
+      background: #FF9D56;
+      pointer-events: none;
+     
+  }
+  .select:hover::after {
+      color: #FF9D56;
+  }
+    
+  
+  .select::after {
+      -webkit-transition: .25s all ease;
+      -o-transition: .25s all ease;
+      transition: .25s all ease;
+  }
+
+}

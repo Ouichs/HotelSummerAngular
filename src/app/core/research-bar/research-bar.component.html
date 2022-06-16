@@ -1,0 +1,25 @@
+
+<div class="container">
+   <div>
+      <form onsubmit="event.preventDefault();" role="search">
+         <input id="search" type="search" placeholder="Votre ville" autofocus required />
+       </form>
+   </div>
+   <div>
+      <app-datepicker></app-datepicker>
+   </div>
+   
+   <div class="select">
+      <select name="slct" id="slct">
+          <option>Nombre de personnes</option>
+          <option value="1">1 personne</option>
+          <option value="2">2 personnes</option>
+          <option value="3">3 personnes</option>
+          <option value="4">4 personnes</option>
+      </select>
+  </div>
+
+    <div>
+      <button class="btn__research" routerLink="/hotel/list">Rechercher</button>
+    </div>
+</div>

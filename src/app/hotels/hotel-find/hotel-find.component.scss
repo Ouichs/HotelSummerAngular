@@ -1,0 +1,61 @@
+
+
+.hotelFind__picture{
+   height: 250px;
+   background-color: aqua;
+   overflow: hidden;
+   img{
+      height: 100%
+   }
+}
+
+.hotelFind__information{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #fff;
+   padding-top: 50px;
+   padding-left: 25px;
+   padding-right: 25px;
+   .hotelFind__information--hotel{
+      line-height:0;
+      .hotelnoteUser{
+         margin-top: 25px;
+      }
+      
+   }
+   .hotelFind__information--adress{
+      line-height:1;
+   
+   }
+}
+.hotelFind__description{
+   background-color: #fff;
+   padding-top: 50px;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-bottom: 50px;
+}
+
+
+.chambresbyHotel{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+   .chambre{
+      background-color: #fff;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .chambre__picture{
+         img{
+            height: 100px;
+         }
+      }
+   }
+
+}
+
