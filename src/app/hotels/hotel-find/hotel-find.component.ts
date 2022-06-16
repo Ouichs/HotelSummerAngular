@@ -23,6 +23,7 @@ export class HotelFindComponent implements OnInit {
 
     this.getHotelbyId(this.id);
     this.getAdressbyId(this.id);
+  
   }
 
   getHotelbyId(id: number){
@@ -40,6 +41,4 @@ export class HotelFindComponent implements OnInit {
          console.log(data)
     })
   }
-
- 
 }

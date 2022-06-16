@@ -1,27 +1,23 @@
 <div class="listHotels">
    <div  class="card__hotel" *ngFor="let hotel of listHotel ">
       <div class="card__images">
-         <img src="/assets/images/beach-house-gb1cd0186c_1920.jpg" alt="chambre">
+         <img src="../../../assets/images/chambre.jpg" alt="chambre">
       </div>
       <div class="card__information">
          <div class="card__nameHotel">
             <p>{{hotel.name}}</p>
-            <p>Lyon</p>
+            <p class="city" *ngIf="hotel['adress']">{{hotel['adress'].city}}, {{hotel['adress'].cp}} </p>
          </div>
-         <div class="card__adress">
-            <p class="adress__number" *ngIf="hotel['adress']">{{hotel['adress'].number}}</p>
-            <p class="adress__street"*ngIf="hotel['adress']">{{hotel['adress'].street}}</p>
-         </div>
+         
          <div class="card__description">
             <p>{{hotel.description}}</p>
          </div>
          <div class="card__notePrice">
             <div class="note__information">
-               <p>Note des clients</p>
                <p class="note">{{hotel.noteUser}}/10</p>
             </div>
-            <div class="voir">
-              <button [routerLink]="['/hotel', hotel.id]" >Voir Hotel</button>
+            <div >
+              <button class="card__button" [routerLink]="['/hotel', hotel.id]">Voir Hotel</button>
             </div>
          </div>
       </div>

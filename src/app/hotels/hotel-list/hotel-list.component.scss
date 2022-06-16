@@ -1,5 +1,7 @@
+
+
 .listHotels{
-   width: 800px;
+   width: 977px;
    margin: 25px;
    height: 80vh;
 }
@@ -10,19 +12,31 @@
    margin-top: 50px;
    border-radius: 8px;
    background-color: #fff;
+
    .card__images{
       width: 50%;
       background-color: #E7E7E7;
       border-radius: 8px 0 0 8px;
+      overflow: hidden;
+      img{
+         width: 330px;
+      }
    }
    .card__information{
       padding: 25px;
+      .card__description{
+         margin-top: 25px;
+      }
    }
    .card__nameHotel{
       line-height: 0.5;
       font-weight: 500;
       p{
          font-size: 18px;
+      }
+      .city{
+         font-size: 14px;
+         color: rgb(31, 31, 31);
       }
    }
    .card__adress{
@@ -36,14 +50,39 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: baseline;
+      margin-top: 25px;
       .note__information{
          display: flex;
          flex-direction: row;
+         
+
          .note{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-left: 5px;
+            background-color: #FF9D56;
+            color: #fff;
+            height: 38px;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 5px;
+            padding-right: 5px;
          }
       }
       .price{
+         font-weight: 500;
+      }
+      .card__button{
+         width: 120px;
+         height: 38px;
+         background-color: #FF9D56;
+         border-radius: 4px;
+         border: none;
+         color: #fff;
+         font-size: 18px;
          font-weight: 500;
       }
    }

@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Adress } from '../class/adress';
+import { BedRoomsRest } from '../class/bed-rooms-rest';
 import { HotelRest } from '../class/hotel-rest';
 
 @Injectable({
@@ -11,7 +12,7 @@ import { HotelRest } from '../class/hotel-rest';
 })
 export class HotelService {
 
-  private baseUrl = 'http://localhost:8080/hotel';
+  private baseUrl = 'http://localhost:8080/api/hotel';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -29,6 +30,8 @@ export class HotelService {
     const searchUrl = `${this.baseUrl}/${id}/adress`;
     return this.httpClient.get<Adress>(searchUrl);
   }
+
+
 }
 
 interface GetResponseFindall {
@@ -36,6 +39,8 @@ interface GetResponseFindall {
     hotel: HotelRest[];
   }
 }
+
+
 
 
 
