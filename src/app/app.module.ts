@@ -12,6 +12,8 @@ import { HotelsModule } from './hotels/hotels.module';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,6 +28,9 @@ import { HotelsModule } from './hotels/hotels.module';
     CoreModule,
     PagesModule,
     HotelsModule,
+    AppRoutingModule,
+   
+    
 
 
   ],

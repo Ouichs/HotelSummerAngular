@@ -1,0 +1,20 @@
+.filters{
+   width: 250px;
+   background-color: #E7E7E7;
+   height: 60vh;
+   margin-top: 50px;
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+
+   .filters_prix{
+      display: flex;
+      flex-direction: column;
+      .filters{
+         display: flex;
+         flex-direction: row;
+      }
+   }
+}
