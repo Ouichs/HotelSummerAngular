@@ -16,17 +16,17 @@
          {
             "pictures": "ch1",
             "price": "136",
-            "type_bedroom": "Chambre Double lit King size"
+            "typebedroom": "Chambre Double lit King size"
          },
          {
             "pictures": "ch2",
             "price": 148,
-            "type_bedroom": "Chambre Lits double couchette"
+            "typebedroom": "Chambre Lits double couchette"
          },
          {
             "pictures": "ch3",
             "price": 184,
-            "type_bedroom": "Chambre privative"
+            "typebedroom": "Chambre privative"
          }
       ]
    },
@@ -47,17 +47,17 @@
          {
             "pictures": "ch4",
             "price": "136",
-            "type_bedroom": "Chambre Double Supérieure"
+            "typebedroom": "Chambre Double Supérieure"
          },
          {
             "pictures": "ch5",
             "price": 148,
-            "type_bedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
+            "typebedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
          },
          {
             "pictures": "ch6",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -78,17 +78,17 @@
          {
             "pictures": "ch7",
             "price": "136",
-            "type_bedroom": "Chambre Double Supérieure"
+            "typebedroom": "Chambre Double Supérieure"
          },
          {
             "pictures": "ch8",
             "price": 148,
-            "type_bedroom": "Chambre Lits Jumeaux Supérieure "
+            "typebedroom": "Chambre Lits Jumeaux Supérieure "
          },
          {
             "pictures": "ch9",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -109,17 +109,17 @@
          {
             "pictures": "ch10",
             "price": "136",
-            "type_bedroom": "Chambre Simple Supérieure"
+            "typebedroom": "Chambre Simple Supérieure"
          },
          {
             "pictures": "ch11",
             "price": 148,
-            "type_bedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
+            "typebedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
          },
          {
             "pictures": "ch12",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -140,17 +140,17 @@
          {
             "pictures": "ch13",
             "price": "136",
-            "type_bedroom": "Chambre Triple Supérieure"
+            "typebedroom": "Chambre Triple Supérieure"
          },
          {
             "pictures": "ch14",
             "price": 148,
-            "type_bedroom": "Chambre luxe vue sur tour eiffel"
+            "typebedroom": "Chambre luxe vue sur tour eiffel"
          },
          {
             "pictures": "ch15",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -171,17 +171,17 @@
          {
             "pictures": "ch17",
             "price": "136",
-            "type_bedroom": "Chambre Double Supérieure"
+            "typebedroom": "Chambre Double Supérieure"
          },
          {
             "pictures": "ch17",
             "price": 148,
-            "type_bedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
+            "typebedroom": "Chambre Lits Jumeaux Supérieure Supérieure"
          },
          {
             "pictures": "ch18",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -202,17 +202,17 @@
          {
             "pictures": "ch19",
             "price": "136",
-            "type_bedroom": "Chambre Double Vip"
+            "typebedroom": "Chambre Double Vip"
          },
          {
             "pictures": "ch20",
             "price": 148,
-            "type_bedroom": "Chambre Lits  simple"
+            "typebedroom": "Chambre Lits  simple"
          },
          {
             "pictures": "ch21",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -233,17 +233,17 @@
          {
             "pictures": "ch22",
             "price": "136",
-            "type_bedroom": "Chambre Double jacuzzi"
+            "typebedroom": "Chambre Double jacuzzi"
          },
          {
             "pictures": "ch23",
             "price": 148,
-            "type_bedroom": "Chambre Lits Jumeaux Supérieure "
+            "typebedroom": "Chambre Lits Jumeaux Supérieure "
          },
          {
             "pictures": "ch24",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    },
@@ -264,17 +264,17 @@
          {
             "pictures": "ch25",
             "price": "136",
-            "type_bedroom": "Chambre Double vue sur mer"
+            "typebedroom": "Chambre Double vue sur mer"
          },
          {
             "pictures": "ch26",
             "price": 148,
-            "type_bedroom": "Chambre simple luxe plus"
+            "typebedroom": "Chambre simple luxe plus"
          },
          {
             "pictures": "ch27",
             "price": 184,
-            "type_bedroom": "Chambre Familiale"
+            "typebedroom": "Chambre Familiale"
          }
       ]
    }
