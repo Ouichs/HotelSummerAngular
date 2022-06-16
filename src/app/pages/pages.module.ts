@@ -1,19 +1,25 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import { PagesRoutingModule } from './pages-routing.module';
-import { HomeComponent } from './home/home.component';
 import { CoreModule } from '../core/core.module';
+import { HotelsModule } from '../hotels/hotels.module';
+import { HomeComponent } from './home/home.component';
+import { PageHotelFindComponent } from './page-hotel-find/page-hotel-find.component';
+import { PageHotelListComponent } from './page-hotel-list/page-hotel-list.component';
+import { PagesRoutingModule } from './pages-routing.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    PageHotelFindComponent,
+    PageHotelListComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
-    CoreModule
+    CoreModule,
+    HotelsModule
   ]
 })
 export class PagesModule { }
