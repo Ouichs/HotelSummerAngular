@@ -54,7 +54,7 @@ export class HotelListComponent implements OnInit {
           el['city'] = data.city
       },
       complete:() =>{
-        if(sessionStorage.getItem("ville")!= "undifined" && el['adress']){
+        if(sessionStorage.getItem("ville") && el['adress']){
           if(el['city'] == sessionStorage.getItem("ville")){
             this.listHotelByParams.push(el)
             //console.log(this.listHotelByParams)

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-research-bar',
   templateUrl: './research-bar.component.html',
@@ -18,7 +20,6 @@ export class ResearchBarComponent implements OnInit {
     if(sessionStorage.getItem("ville")){
       this.ville = sessionStorage.getItem("ville");
     }
-    
   }
 
   researchInfo(){
@@ -30,7 +31,6 @@ export class ResearchBarComponent implements OnInit {
     }
     this.router.navigate(['/hotel/list'])
    
-    
   }
 
 
