@@ -9,12 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
 
-
-
+import { UsersModule } from './users/users.module';
 @NgModule({
   declarations: [
-    AppComponent
-    
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,10 +20,9 @@ import { PagesModule } from './pages/pages.module';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    UsersModule,
     CoreModule,
     PagesModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]

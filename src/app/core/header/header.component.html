@@ -1,30 +1,26 @@
-
-  <nav>
-    <div class="logo">
-      <div class="logo-text">
-        <h1>
-          H
-        </h1>
-      </div>
+<nav>
+  <div class="logo">
+    <div class="logo-text">
+      <h1>H</h1>
     </div>
-    <div class="right-nav">
-      <ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <p *ngIf="isAvailable; else loggedOut">Bonjour {{ utilsateur }}</p>
+
+      <ng-template #loggedOut>
         <li>
-          <a routerLink="signup" routerLinkActive="active" >
+          <a routerLink="inscription" routerLinkActive="active">
             Inscription
           </a>
         </li>
         <li>
-          <a routerLink="login" routerLinkActive="active" >
-            Connexion
-          </a>
+          <a routerLink="login" routerLinkActive="active"> Connexion </a>
         </li>
         <li>
-          <a *ngIf="false">
-            Déconnexion 
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+          <a *ngIf="false"> Déconnexion </a>
+        </li></ng-template
+      >
+    </ul>
+  </div>
+</nav>
