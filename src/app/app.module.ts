@@ -10,9 +10,17 @@ import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
 
 import { UsersModule } from './users/users.module';
+import { CommandeComponent } from './facturation/commande/commande.component';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    CommandeComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -23,6 +31,7 @@ import { UsersModule } from './users/users.module';
     UsersModule,
     CoreModule,
     PagesModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
