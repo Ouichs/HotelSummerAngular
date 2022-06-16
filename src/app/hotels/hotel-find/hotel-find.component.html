@@ -1,44 +1,45 @@
 
-<div class="hotelFind">
+<div class="hotelFind" *ngIf="hotel">
    <div class="hotelFind__picture">
       <img src="../../../assets/images/chambre.jpg" alt="chambre">
    </div> 
-   <div class="hotelFind__information">
-      <div class="hotelFind__information--hotel">
-         <p>Hôtel {{hotel.name}}</p>
-         <p>★★★</p>
-         <p class="hotelnoteUser">{{hotel.noteUser}}/10</p>
+   <div  class="hotelFind__information">
+      <div class="hotelFind__des">
+         <div class="hotelFind__information--hotel">
+            <p>Hôtel {{hotel.name}}</p>
+            <p>★★★</p>
+            <p class="hotelnoteUser">{{hotel.noteUser}}/10</p>
+         </div>
+         <div *ngIf="adress" class="hotelFind__information--adress">
+            <p>Adresse</p>
+            <p>{{adress.number}} {{adress.street}}</p>
+            <p>{{adress.city}} {{adress.cp}}</p>
+         </div>
       </div>
-      <div class="hotelFind__information--adress">
-         <p>Adresse</p>
-         <p>{{adress.number}} {{adress.street}}</p>
-         <p>{{adress.city}} {{adress.cp}}</p>
-      </div>
-   </div> 
-   <div class="hotelFind__description">
-      <p>{{hotel.description}}</p>
+      <div class="hotelFind__description">
+         <p>{{hotel.description}}</p>
+      </div> 
    </div> 
 </div>
+
 <div class="chambresbyHotel">
-   <div class="chambre">
+   
+   <div class="chambre" *ngFor="let el of listbedrooms">
       <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
+         <img src="../../../assets/img/{{el.pictures}}.png" alt="chambre">
+      </div>
+      <div class="chambre__description">
+         <div class="chambre__information">
+            <p>{{el.typeBedroom}}<p>
+          </div>
+          <div class="chambre__reservation">
+             <p class="chambre__reservation--prix">{{el.price}}€</p>
+             <button>Reserver</button>
+           </div>
       </div>
    </div>
-   <div class="chambre">
-      <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
-      </div>
-      <div class="chambre__information">
-        <p>Toto<p>
-      </div>
-   </div>
-   <div class="chambre">
-      <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
-      </div>
-   </div>
-</div>
+   
+</div>  
    
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-research-bar',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResearchBarComponent implements OnInit {
 
-  constructor() { }
+  ville: string;
+  startDate: string;
+  endDate:string;
+  NbPersonnes: string;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    if(sessionStorage.getItem("ville")){
+      this.ville = sessionStorage.getItem("ville");
+    }
+    
   }
+
+  researchInfo(){
+    if(this.ville){
+      sessionStorage.setItem("ville",this.ville);
+    } else{
+      sessionStorage.removeItem("ville");
+      
+    }
+    this.router.navigate(['/hotel/list'])
+   
+    
+  }
+
+
+  
+
+  
 
 }

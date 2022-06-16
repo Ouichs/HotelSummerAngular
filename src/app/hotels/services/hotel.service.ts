@@ -26,11 +26,16 @@ export class HotelService {
     const searchUrl = `${this.baseUrl}/${id}`;
     return this.httpClient.get<HotelRest>(searchUrl);
   }
+
   getHotelAdress(id: number): Observable<Adress>{
     const searchUrl = `${this.baseUrl}/${id}/adress`;
     return this.httpClient.get<Adress>(searchUrl);
   }
 
+  getBedRooms(id: number): Observable<BedRoomsRest>{
+    const searchUrl = `${this.baseUrl}/${id}/bedrooms`;
+    return this.httpClient.get<BedRoomsRest>(searchUrl);
+  }
 
 }
 

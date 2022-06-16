@@ -1,22 +1,27 @@
 
-
+.hotelFind{
+   display: flex;
+}
 .hotelFind__picture{
    height: 250px;
-   background-color: aqua;
    overflow: hidden;
    img{
       height: 100%
    }
 }
 
+.hotelFind__des{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hotelFind__information{
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: space-between;
    background-color: #fff;
-   padding-top: 50px;
-   padding-left: 25px;
-   padding-right: 25px;
+   padding: 25px;
    .hotelFind__information--hotel{
       line-height:0;
       .hotelnoteUser{
@@ -30,29 +35,55 @@
    }
 }
 .hotelFind__description{
-   background-color: #fff;
-   padding-top: 50px;
-   padding-left: 25px;
-   padding-right: 25px;
-   padding-bottom: 50px;
+   
 }
 
 
 .chambresbyHotel{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
 
    .chambre{
       background-color: #fff;
       width: 30%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      margin-top: 25px;
       align-items: center;
+      height: 50vh;
+      margin-bottom: 25px;
       .chambre__picture{
          img{
-            height: 100px;
+            width: 100%;
+         }
+      }
+      .chambre__information{
+         margin-top: 18px;
+         p{
+            font-size: 25px;
+            font-weight: 400;
+         }
+      }
+      .chambre__reservation{
+         display: flex;
+         align-items: baseline;
+         width: 100%;
+         justify-content: space-around;
+
+         p{
+            font-size: 18px;
+         }
+         
+         button{
+            width: 120px;
+            height: 38px;
+            background-color: #FF9D56;
+            border-radius: 4px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
          }
       }
    }

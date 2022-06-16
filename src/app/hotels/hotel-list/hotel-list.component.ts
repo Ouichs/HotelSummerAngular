@@ -1,5 +1,5 @@
+import * as _ from 'lodash';
 import { Component, OnInit } from '@angular/core';
-
 import { Adress } from '../class/adress';
 import { Hotel } from '../class/hotel';
 import { HotelRest } from '../class/hotel-rest';
@@ -19,10 +19,14 @@ export class HotelListComponent implements OnInit {
   listAdress: Adress[] = [];
   listHotel: Hotel[] = [];
   hotelsRest: HotelRest[];
+
+  listHotelByParams: Hotel[] = [];
+
   constructor(private hotelService: HotelService) { }
 
   ngOnInit(): void {
     this.listHotels();
+    
   }
 
   listHotels(){
@@ -36,22 +40,31 @@ export class HotelListComponent implements OnInit {
         )
       },
       complete:() =>{
-        this.getAddress();
+        this.getAddress(); 
       }
     })
   }
 
+
   getAddress(){
-  console.log(this.listHotel)
     this.listHotel.forEach(el => {
-      this.hotelService.getHotelAdress(el.id).subscribe(
-        data =>{
-         el['adress'] = data
-           console.log(el)
+      this.hotelService.getHotelAdress(el.id).subscribe({
+        next:(data) =>{
+          el['adress'] = data
+          el['city'] = data.city
+      },
+      complete:() =>{
+        if(sessionStorage.getItem("ville")!= "undifined" && el['adress']){
+          if(el['city'] == sessionStorage.getItem("ville")){
+            this.listHotelByParams.push(el)
+            //console.log(this.listHotelByParams)
+            }
+          } else{
+            this.listHotelByParams = this.listHotel;
+            console.log(this.listHotelByParams)
+          }
+        }
       })
     })
   }
-
-
-
 }
