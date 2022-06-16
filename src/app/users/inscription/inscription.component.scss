@@ -21,12 +21,21 @@ $theme-colors:(
 
 margin: auto;
 padding-top: 2%;
-    width: 50vw;
-    max-width: 600px;
+    width: 60vw;
+    box-shadow:  10px 10px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }
-
 
 .btn-primary{
     color: white;
 }
+
+
+.titre-inscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 

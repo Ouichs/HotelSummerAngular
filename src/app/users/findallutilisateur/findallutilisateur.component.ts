@@ -31,9 +31,6 @@ export class FindallutilisateurComponent implements OnInit {
     this.http.get<UserRest>("http://localhost:8080/users").subscribe(
       response => {
         this.myList = response._embedded.users
-        this.hello = JSON.stringify(response)
-        console.log(this.myList[0])
-        // console.log(this.myList)
       },
       err => {
         console.log("KO  init");
@@ -45,7 +42,7 @@ export class FindallutilisateurComponent implements OnInit {
 
     this.http.delete(u._links.self.href).subscribe(
       response => {
-        this.message = "Article supprimé";
+        this.message = "Utilisateur correctement supprimé !";
         this.init();
       },
       err => {
@@ -54,6 +51,9 @@ export class FindallutilisateurComponent implements OnInit {
         console.log(err)
       }
     )
+
+
+
 
   }
 

@@ -7,8 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ResearchBarComponent } from './research-bar/research-bar.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
@@ -23,7 +23,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   imports: [
     CommonModule,
     CoreRoutingModule,
-
     MatDatepickerModule,
     MatInputModule,
     MatFormFieldModule,
