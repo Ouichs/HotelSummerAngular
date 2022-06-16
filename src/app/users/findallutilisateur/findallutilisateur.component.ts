@@ -28,7 +28,7 @@ export class FindallutilisateurComponent implements OnInit {
   }
 
   init() {
-    this.http.get<UserRest>("http://localhost:8080/users").subscribe(
+    this.http.get<UserRest>("http://localhost:8080/api/users").subscribe(
       response => {
         this.myList = response._embedded.users
       },

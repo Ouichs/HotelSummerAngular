@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from '../facturation/cart/cart.component';
+import { CommandeComponent } from '../facturation/commande/commande.component';
+import { FindallutilisateurComponent } from '../users/findallutilisateur/findallutilisateur.component';
+import { InscriptionComponent } from '../users/inscription/inscription.component';
 import { HomeComponent } from './home/home.component';
 import { PageHotelFindComponent } from './page-hotel-find/page-hotel-find.component';
 import { PageHotelListComponent } from './page-hotel-list/page-hotel-list.component';
@@ -7,7 +11,11 @@ import { PageHotelListComponent } from './page-hotel-list/page-hotel-list.compon
 const routes: Routes = [
   {path:'hotel/list', component: PageHotelListComponent},
   {path:'hotel/:id', component: PageHotelFindComponent},
-  {path: '', component: HomeComponent}
+  { path: 'inscription', component: InscriptionComponent },
+  { path: 'utilisateurs', component: FindallutilisateurComponent },
+  { path: 'panier', component: CartComponent },
+  { path: 'user/commande', component: CommandeComponent },
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({

@@ -15,7 +15,7 @@ export class UsersRestApiService {
   constructor(private http: HttpClient) { }
   create(data: any) {
     const body = JSON.stringify(data);
-    this.http.post("http://localhost:8080/users", body, {
+    this.http.post("http://localhost:8080/api/users", body, {
       headers: new HttpHeaders({
         "Content-Type": "application/json"
 
@@ -27,7 +27,7 @@ export class UsersRestApiService {
   }
 
   getInfo() {
-    this.http.get<Array<User>>("http://localhost:8080/users").subscribe(
+    this.http.get<Array<User>>("http://localhost:8080/api/users").subscribe(
       response => {
         sessionStorage.setItem("lst", JSON.stringify(response))
 
