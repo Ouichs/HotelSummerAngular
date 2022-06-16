@@ -1,0 +1,263 @@
+{
+    "name": "Campanile",
+    "description": "Le Campanile Lyon Centre Part-Dieu propose des chambres climatisées avec une   connexion Wi-Fi gratuite en face de la gare ferroviaire de Lyon-Part-Dieu.",
+    "pictures": "hotel1",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Lyon",
+    "cp":"69003",
+    "street":"Rue Maurice Flandin",
+    "number":"31",
+    "contact_information":"01 75 32 34 43"
+}
+chambres:[
+{
+   "pictures":"ch1",
+   "price":"136",
+   "type_bedroom":"Chambre Double lit King size"
+},
+{
+   "pictures":"ch2",
+   "price":148,
+   "type_bedroom":"Chambre Lits double couchette"
+},
+{
+   "pictures":"ch3",
+   "price":184,
+   "type_bedroom":"Chambre privative"
+}]
+}
+{
+    "name": "yndo hotel",
+    "description": "Doté d’un bar et d’un salon commun, l’Eklo Bordeaux Centre Bastide vous accueille à Bordeaux, à 3,1 km du pont Chaban-Delmas et à 3,6 km du pont de pierre.",
+    "pictures": "hotel2",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Bordeaux",
+    "cp":"33900",
+    "street":"rue Abbe de l'Epee, ",
+    "number":"108",
+    "contact_information":"+33 5 56 23 88 88"
+}
+chambres:[
+{
+   "pictures":"ch4",
+   "price":"136",
+   "type_bedroom":"Chambre Double Supérieure"
+},
+{
+   "pictures":"ch5",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure Supérieure"
+},
+{
+   "pictures":"ch6",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "hotel cardinal",
+    "description": "L'hôtel ibis budget Bordeaux Centre - Gare Saint Jean met à votre disposition une connexion Wi-Fi gratuite. Excellent locations and their front desk staffs !",
+    "pictures": "hotel3",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Bordeaux",
+    "cp":"33017",
+    "street":"Rue Martinique",
+    "number":"13",
+    "contact_information":" 01 33 34 98 76"
+}
+chambres:[
+{
+   "pictures":"ch7",
+   "price":"136",
+   "type_bedroom":"Chambre Double Supérieure"
+},
+{
+   "pictures":"ch8",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure "
+},
+{
+   "pictures":"ch9",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "la maison Bordeaux",
+    "description": "Situé dans le quartier des affaires de Bordeaux, l'ibis Bordeaux Centre Mériadeck bénéficie d'une brasserie et de salles de réunion. Des collations sont disponibles 24h/24 et 7j/7 au bar.",
+    "pictures": "hotel4",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Bordeaux",
+    "cp":"33298",
+    "street":"Rue de la Guadeloupe",
+    "number":"971",
+    "contact_information":"  08 76 56 45"
+}
+chambres:[
+{
+   "pictures":"ch10",
+   "price":"136",
+   "type_bedroom":"Chambre Simple Supérieure"
+},
+{
+   "pictures":"ch11",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure Supérieure"
+},
+{
+   "pictures":"ch12",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "la boutique hotel",
+    "description": "Situé à seulement 15 minutes à pied du centre historique de Paris, à côté du Jparc de Rivoli t du pont de L'Alma, l'ibis budget",
+    "pictures": "hotel5",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Paris",
+    "cp":"75008",
+    "street":"Rue Victor ",
+    "number":"75",
+    "contact_information":"01 49 07 09 08"
+}
+chambres:[
+{
+   "pictures":"ch13",
+   "price":"136",
+   "type_bedroom":"Chambre Triple Supérieure"
+},
+{
+   "pictures":"ch14",
+   "price":148,
+   "type_bedroom":"Chambre luxe vue sur tour eiffel"
+},
+{
+   "pictures":"ch15",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "novotel Bordeaux",
+    "description": "Situé à Bordeaux, à moins de 700 mètres de la Cité du Vin et du pont Chaban Delmas, le Radisson Blu Hotel Bordeaux comporte une terrasse, une connexion Wi-Fi gratuite et un bar.",
+    "pictures": "hotel6",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Bordeaux",
+    "cp":"330",
+    "street":"Rue Maurice Flandin",
+    "number":"31",
+    "contact_information":""
+}
+chambres:[
+{
+   "pictures":"ch17",
+   "price":"136",
+   "type_bedroom":"Chambre Double Supérieure"
+},
+{
+   "pictures":"ch17",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure Supérieure"
+},
+{
+   "pictures":"ch18",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "Ibis Budget",
+    "description": "Situé au Mans, à 1,5 km du pont de pierre, l'établissement Hilton Mans  Centre vous propose des hébergements climatisés, un bar, une réception ouverte 24h/24, une connexion Wi-Fi...",
+    "pictures": "hotel7",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Mans",
+    "cp":"72340",
+    "street":"Rue Jaquito",
+    "number":"98",
+    "contact_information":"05 65 56 78 43"
+}
+chambres:[
+{
+   "pictures":"ch19",
+   "price":"136",
+   "type_bedroom":"Chambre Double Vip"
+},
+{
+   "pictures":"ch20",
+   "price":148,
+   "type_bedroom":"Chambre Lits  simple"
+},
+{
+   "pictures":"ch21",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "Hotelf1 Marseill",
+    "description": "L’hotelF1 Bordeaux Ville est situé à Bordeaux. Il propose une terrasse, un parking privé gratuit et une réception ouverte 24h/24. It was friendly, extremely",
+    "pictures": "hotel8",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Marseill",
+    "cp":"13013",
+    "street":"Rue de la castafiore",
+    "number":"13",
+    "contact_information":" 03 42 13 75 93"
+}
+chambres:[
+{
+   "pictures":"ch22",
+   "price":"136",
+   "type_bedroom":"Chambre Double jacuzzi"
+},
+{
+   "pictures":"ch23",
+   "price":148,
+   "type_bedroom":"Chambre Lits Jumeaux Supérieure "
+},
+{
+   "pictures":"ch24",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}{
+    "name": "Residdhome Toulouse",
+    "description": "Le Campanile Toulouse Centre  propose des chambres climatisées avec une   connexion Wi-Fi gratuite en face de la gare et de shopi.",
+    "pictures": "hotel9",
+    "noteUser": 7.9,
+    "starsNotation": 3,
+adresse : {
+    "city":"Toulouse",
+    "cp":"31000",
+    "street":"Rue de nice",
+    "number":"31",
+    "contact_information":" 03 45 32 32 11"
+}
+chambres:[
+{
+   "pictures":"ch25",
+   "price":"136",
+   "type_bedroom":"Chambre Double vue sur mer"
+},
+{
+   "pictures":"ch26",
+   "price":148,
+   "type_bedroom":"Chambre simple luxe plus"
+},
+{
+   "pictures":"ch27",
+   "price":184,
+   "type_bedroom":"Chambre Familiale"
+}]
+}
