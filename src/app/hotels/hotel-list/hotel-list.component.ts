@@ -29,13 +29,13 @@ export class HotelListComponent implements OnInit {
     this.hotelService.getHotelsList().subscribe({
       next:(data) =>{
         this.hotelsRest = data;
-      },
-      complete:() =>{
-        this.hotelsRest.map(
+        data.map(
           (rest)=>{
             this.listHotel.push(new Hotel(rest))
           }
         )
+      },
+      complete:() =>{
         this.getAddress();
       }
     })
