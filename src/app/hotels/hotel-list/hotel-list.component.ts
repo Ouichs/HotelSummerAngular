@@ -22,8 +22,6 @@ export class HotelListComponent implements OnInit {
 
   listHotelByParams: Hotel[] = [];
 
-  ville = "Lyon";
-
   constructor(private hotelService: HotelService) { }
 
   ngOnInit(): void {
@@ -31,57 +29,39 @@ export class HotelListComponent implements OnInit {
     
   }
 
-  
-
   listHotels(){
     this.hotelService.getHotelsList().subscribe({
       next:(data) =>{
         this.hotelsRest = data;
-        
         data.map(
           (rest)=>{
             this.listHotel.push(new Hotel(rest))
-            
           }
         )
       },
       complete:() =>{
         this.getAddress(); 
-        this.getBedRooms();
       }
     })
   }
 
-  getBedRooms(){
-    this.listHotel.forEach(el => {
-      console.log(el)
-      this.hotelService.getBedRooms(el.id).subscribe({
-        next:(data) =>{
-          el['bedrooms'] = data
-      },
-      complete:() =>{
-
-        }
-      })
-    })
-  }
 
   getAddress(){
     this.listHotel.forEach(el => {
-      console.log(el)
       this.hotelService.getHotelAdress(el.id).subscribe({
         next:(data) =>{
           el['adress'] = data
           el['city'] = data.city
       },
       complete:() =>{
-        if(this.ville && el['adress']){
-          if(el['city'] == this.ville){
+        if(sessionStorage.getItem("ville")!= "undifined" && el['adress']){
+          if(el['city'] == sessionStorage.getItem("ville")){
             this.listHotelByParams.push(el)
-            console.log(this.listHotelByParams)
+            //console.log(this.listHotelByParams)
             }
           } else{
             this.listHotelByParams = this.listHotel;
+            console.log(this.listHotelByParams)
           }
         }
       })

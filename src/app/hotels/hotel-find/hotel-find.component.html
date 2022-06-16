@@ -16,8 +16,6 @@
             <p>{{adress.city}} {{adress.cp}}</p>
          </div>
       </div>
-      
-
       <div class="hotelFind__description">
          <p>{{hotel.description}}</p>
       </div> 
@@ -26,45 +24,22 @@
 
 <div class="chambresbyHotel">
    
-   <div class="chambre">
+   <div class="chambre" *ngFor="let el of listbedrooms">
       <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
+         <img src="../../../assets/img/{{el.pictures}}.png" alt="chambre">
       </div>
       <div class="chambre__description">
          <div class="chambre__information">
-            <p>Chambres doubles pour deux<p>
+            <p>{{el.typeBedroom}}<p>
           </div>
           <div class="chambre__reservation">
-             <p class="chambre__reservation--prix">175€</p>
+             <p class="chambre__reservation--prix">{{el.price}}€</p>
              <button>Reserver</button>
            </div>
       </div>
-      
    </div>
-   <div class="chambre">
-      <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
-      </div>
-      <div class="chambre__information">
-        <p>Chambres doubles pour deux<p>
-      </div>
-      <div class="chambre__reservation">
-         <p class="chambre__reservation--prix">175€</p>
-         <button>Reserver</button>
-       </div>
-   </div>
-   <div class="chambre">
-      <div class="chambre__picture">
-         <img src="../../../assets/images/chambre.jpg" alt="chambre">
-      </div>
-      <div class="chambre__information">
-        <p>Chambres doubles pour deux<p>
-      </div>
-      <div class="chambre__reservation">
-         <p class="chambre__reservation--prix">175€</p>
-         <button>Reserver</button>
-       </div>
-   </div>
+   
+</div>  
    
 
 

@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
 
 
     if (this.utilsateur === null) {
-      console.log(this.utilsateur)
+      //console.log(this.utilsateur)
     } else {
       this.isAvailable = true
 

@@ -10,9 +10,9 @@ export class Hotel {
     id:number;
 
     constructor(hotelRest: HotelRest){
-
+        
         let str = hotelRest._links.self.href
-        this.id = Number.parseInt(str.substring(str.length-1));
+        this.id = Number.parseInt(str.substring(str.lastIndexOf("/")+1));
         this.name = hotelRest.name;
         this.description=hotelRest.description;
         this.pictures = hotelRest.pictures;

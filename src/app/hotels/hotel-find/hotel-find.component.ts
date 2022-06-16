@@ -41,12 +41,8 @@ export class HotelFindComponent implements OnInit {
   getBedroom(id: number){
     this.hotelService.getBedRooms(id).subscribe(
       data =>{
-        this.bedrooms = data;
-        data['bedrooms']._embedded.bedroom.forEach(el => {
-          console.log(el)
-          this.listbedrooms.push(el)
-        });
-         console.log(data)
+        console.log(data._embedded.bedroom)
+         this.listbedrooms = data._embedded.bedroom;
          console.log(this.listbedrooms)
     })
   }
