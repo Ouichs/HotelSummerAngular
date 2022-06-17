@@ -20,6 +20,9 @@ export class ResearchBarComponent implements OnInit {
     if(sessionStorage.getItem("ville")){
       this.ville = sessionStorage.getItem("ville");
     }
+    if(sessionStorage.getItem("nb")){
+      this.NbPersonnes = sessionStorage.getItem("nb");
+    }
   }
 
   researchInfo(){
@@ -27,10 +30,15 @@ export class ResearchBarComponent implements OnInit {
       sessionStorage.setItem("ville",this.ville);
     } else{
       sessionStorage.removeItem("ville");
-      
     }
+
+    if(this.NbPersonnes){
+      sessionStorage.setItem("nb", this.NbPersonnes)
+    }else{
+      sessionStorage.removeItem("nb");
+    }
+
     this.router.navigate(['/hotel/list'])
-   
   }
 
 

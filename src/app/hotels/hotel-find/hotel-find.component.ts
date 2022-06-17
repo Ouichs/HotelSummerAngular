@@ -34,7 +34,7 @@ export class HotelFindComponent implements OnInit {
     this.hotelService.getHotelbyId(id).subscribe(
       data =>{
         this.hotel = data;
-          //console.log(data)
+          console.log(data)
     })
   }
 

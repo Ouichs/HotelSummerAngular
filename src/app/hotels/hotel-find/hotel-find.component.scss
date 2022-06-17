@@ -1,8 +1,10 @@
 
 .hotelFind{
    display: flex;
+   box-shadow: 0px 2px 6px -5px rgb(0 0 0 / 97%);
 }
 .hotelFind__picture{
+   width: 40%;
    height: 250px;
    overflow: hidden;
    img{
@@ -22,8 +24,10 @@
    justify-content: space-between;
    background-color: #fff;
    padding: 25px;
+   width: 60%;
    .hotelFind__information--hotel{
       line-height:0;
+      font-size: 18px;
       .hotelnoteUser{
          margin-top: 25px;
       }
@@ -43,6 +47,9 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   @media(max-width: 1000px){
+      flex-direction: column;
+   }
 
    .chambre{
       background-color: #fff;
@@ -53,9 +60,37 @@
       align-items: center;
       height: 50vh;
       margin-bottom: 25px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 34%);
+      @media(max-width: 1000px){
+         flex-direction: row;
+         width: 100%;
+         height: 200px;
+      }
       .chambre__picture{
+         height: 200px;
+         overflow: hidden;
+         display: flex;
+         align-items: center;
+         @media(max-width: 1000px){
+            width: 30%;
+         }
          img{
             width: 100%;
+            @media(max-width: 1000px){
+               width: 125%;
+            }
+         }
+      }
+      .chambre__description{
+         height: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         @media(max-width: 1000px){
+            width: 70%;
+            align-items: center;
+            height: 100%;
          }
       }
       .chambre__information{

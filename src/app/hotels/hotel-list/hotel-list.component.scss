@@ -4,7 +4,9 @@
 }
 .listHotels{
    width: 977px;
-   
+   @media(max-width: 1400px){
+      width: 100%;
+   }
    
 }
 
@@ -17,15 +19,17 @@
 
    .card__images{
       width: 50%;
-      background-color: #E7E7E7;
       border-radius: 8px 0 0 8px;
       overflow: hidden;
       img{
-         width: 330px;
+         width: 278px;
       }
    }
    .card__information{
       padding: 25px;
+      @media(max-width: 1400px){
+         width: 70%;
+      }
       .card__description{
          margin-top: 25px;
       }

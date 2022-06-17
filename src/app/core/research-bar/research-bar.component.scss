@@ -7,6 +7,12 @@
    justify-content: space-between;
    padding: 32px;
    border-radius: 8px;
+   @media(max-width: 1400px){
+    flex-direction: column;
+    height: 500px;
+    justify-content: normal;
+    width: 526px;
+ }
 
    #search{
       height: 50px;
@@ -14,6 +20,9 @@
       border-radius: 5px;
       padding-left:10px;
       width: 200px;
+      @media(max-width: 1400px){
+        width: 480px;
+     }
    }
 
    .btn__research{
@@ -46,6 +55,13 @@
       background: #fff;
       overflow: hidden;
       border-radius: 5px;
+      @media(max-width: 1400px){
+        width: 480px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 25px;
+        margin-left: 25px;
+     }
       
   }
   select {
@@ -85,4 +101,7 @@
     margin: 25px;
   }
 
+
+
+  
 }
