@@ -11,7 +11,7 @@ import { PageHotelListComponent } from './page-hotel-list/page-hotel-list.compon
 const routes: Routes = [
   {path:'hotel/list', component: PageHotelListComponent},
   {path:'hotel/:id', component: PageHotelFindComponent},
-  { path: 'inscription', component: InscriptionComponent },
+  // { path: 'inscription', component: InscriptionComponent },
   { path: 'utilisateurs', component: FindallutilisateurComponent },
   { path: 'panier', component: CartComponent },
   { path: 'user/commande', component: CommandeComponent },

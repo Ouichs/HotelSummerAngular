@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent } from './app.component';
+import { AuthModule } from './auth/auth.module';
 import { CoreModule } from './core/core.module';
-import { PagesModule } from './pages/pages.module';
-import { HotelsModule } from './hotels/hotels.module';
-import { UsersModule } from './users/users.module';
 import { FacturationModule } from './facturation/facturation.module';
-
-
+import { HotelsModule } from './hotels/hotels.module';
+import { PagesModule } from './pages/pages.module';
+import { UsersModule } from './users/users.module';
+import { AuthconfigInterceptor } from './auth/authconfig.interceptor';
 
 
 @NgModule({
@@ -27,15 +28,21 @@ import { FacturationModule } from './facturation/facturation.module';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    UsersModule,
-    CoreModule,
-    PagesModule,
-    HotelsModule,
     AppRoutingModule,
+    AuthModule,
+    CoreModule,
     FacturationModule,
-
+    HotelsModule,
+    PagesModule,
+    UsersModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthconfigInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+$theme-colors: (
+    "primary" : #FF9D56
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+.formulaire-inscription {
+
+    margin: auto;
+    padding-top: 2%;
+    width: 60vw;
+    box-shadow: 10px 10px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.btn-primary {
+    color: white;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+
+.titre-inscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-control {
+    margin: auto;
+    width: 90%;
+}
+
+label {
+    margin-left: 5%;
+}
