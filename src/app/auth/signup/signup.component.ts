@@ -23,11 +23,15 @@ export class SignupComponent implements OnInit {
 
   registerUser() {
     this.authService.signUp(this.signupForm.value).subscribe((res) => {
-      if (res.result) {
+      console.log("out if");
+
+      if (res.message) {
+        console.log("in if");
+
         this.signupForm.reset();
-        this.router.navigate(['log-in']);
+        this.router.navigate(['']);
       }
     });
   }
-  
+
 }
