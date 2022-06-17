@@ -101,6 +101,22 @@
     margin: 25px;
   }
 
+  .datepicker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 36%;
+    @media(max-width: 1400px){
+      width: 100%;
+   }
+    .datepickerinput{
+      padding: 12px;
+      width: 212px;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+
 
 
   

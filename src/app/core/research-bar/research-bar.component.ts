@@ -23,6 +23,13 @@ export class ResearchBarComponent implements OnInit {
     if(sessionStorage.getItem("nb")){
       this.NbPersonnes = sessionStorage.getItem("nb");
     }
+    if(sessionStorage.getItem("dateStart")){
+      this.startDate = sessionStorage.getItem("dateStart");
+    }
+    if(sessionStorage.getItem("endDate")){
+      this.endDate = sessionStorage.getItem("endDate");
+    }
+    
   }
 
   researchInfo(){
@@ -37,6 +44,18 @@ export class ResearchBarComponent implements OnInit {
     }else{
       sessionStorage.removeItem("nb");
     }
+
+    if(this.startDate){
+      sessionStorage.setItem("dateStart", this.startDate)
+    }else{
+      sessionStorage.removeItem("dateStart");
+    }
+    if(this.endDate){
+      sessionStorage.setItem("endDate", this.endDate)
+    }else{
+      sessionStorage.removeItem("endDate");
+    }
+    
 
     this.router.navigate(['/hotel/list'])
   }
