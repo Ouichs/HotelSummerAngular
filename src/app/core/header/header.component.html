@@ -10,15 +10,15 @@
 
       <ng-template #loggedOut>
         <li>
-          <a routerLink="inscription" routerLinkActive="active">
+          <a routerLink="signup" routerLinkActive="active">
             Inscription
           </a>
         </li>
         <li>
           <a routerLink="login" routerLinkActive="active"> Connexion </a>
         </li>
-        <li>
-          <a *ngIf="false"> Déconnexion </a>
+        <li *ngIf="loggedin">
+          <a (click)="logout()" > Déconnexion </a>
         </li></ng-template
       >
     </ul>
