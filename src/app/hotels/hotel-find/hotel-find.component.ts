@@ -54,4 +54,8 @@ export class HotelFindComponent implements OnInit {
          //console.log(data)
     })
   }
+
+  reserver(){
+    
+  }
 }

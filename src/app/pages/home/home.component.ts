@@ -11,6 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     sessionStorage.removeItem("ville")
+    sessionStorage.removeItem("endDate")
+    sessionStorage.removeItem("dateStart")
+    sessionStorage.removeItem("nb")
   }
 
 }
